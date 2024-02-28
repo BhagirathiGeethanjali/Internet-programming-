@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insurance Management - Agent Dashboard</title>
+</head>
+<body style="background-color:rgb(101, 184, 195);">
+    <h1>Welcome, Agent</h1>
+
+    <form action="register.php" method="POST">
+        <label for="agentUsername">Username:</label>
+        <input type="text" id="agentUsername" name="agentUsername" required><br><br>
+
+        <label for="agentPassword">Password:</label>
+        <input type="password" id="agentPassword" name="agentPassword" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <form action="createcustomer.php" method="POST">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required><br><br>
+
+        <!-- Additional fields for customer details -->
+
+        <input type="submit" value="Create Customer">
+    </form>
+
+    <a href="managercustomers.php">Manage Customer Details</a>
+
+    <a href="managepolicies.php">Manage Policy Details</a>
+
+    <form action="sendsms.php" method="POST">
+        <label for="policyholderPhoneNumber">Policyholder's Phone Number:</label>
+        <input type="text" id="policyholderPhoneNumber" name="policyholderPhoneNumber" required><br><br>
+
+        <textarea id="smsMessage" name="smsMessage" required></textarea><br><br>
+
+        <input type="submit" value="Send SMS Alert">
+    </form>
+
+    <!-- Additional agent functionalities can be added here -->
+    <a href="C:\Users\jagad\OneDrive\Documents\12 3.html">user login</a>
+</body>
+</html>
