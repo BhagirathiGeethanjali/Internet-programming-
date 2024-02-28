@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insurance Management - User Dashboard</title>
+</head>
+<body style="background-color:rgb(101, 184, 195);">
+    <h1>Welcome, User</h1>
+
+    <form action="login.php" method="POST">
+        <label for="userUsername">Username:</label>
+        <input type="text" id="userUsername" name="userUsername" required><br><br>
+
+        <label for="userPassword">Password:</label>
+        <input type="password" id="userPassword" name="userPassword" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <a href="managepolicies.php">Manage Policy Details</a>
+
+    <a href="getsmsalerts.php">Get SMS Alerts</a><br>
+
+    <!-- Additional user functionalities can be added here -->
+</body>
+</html>
